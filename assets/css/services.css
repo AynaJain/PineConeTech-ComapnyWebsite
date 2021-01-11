@@ -1,0 +1,246 @@
+@font-face {
+  font-family: normal-antenna;
+  /* font-weight: semi-bold; */
+  src: url(../font-family/ford-antenna-regular.otf) format("truetype");
+  font-weight: normal;
+}
+
+
+@font-face {
+  font-family: medium-antenna;
+  /* font-weight: semi-bold; */
+  src: url(../font-family/ford-antenna-medium.otf) format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: semibold-antenna;  
+  src: url(../font-family/ford-antenna-semibold.otf) format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: semibold-italic-antenna;
+  src: url(../font-family/ford-antenna-semibold-italic.otf) format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: thin-italic-antenna;
+  src: url(../font-family/ford-antenna-thin-italic.otf) format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: bold-antenna;
+  src: url(../font-family/ford-antenna-bold.otf) format("truetype");
+  font-weight: normal;
+}
+
+
+
+
+.services_header{
+  background-image:url(../images/services.jpg);
+  height:100vh;
+  background-size:cover;
+} 
+
+.services_text{
+  height: 50%;
+  width: 50%;
+}
+
+.service_geek{
+	padding-top:65px;
+	letter-spacing: 25px; 
+	font-family:medium-antenna; 
+	font-size:60px; 
+	color:#B49B57
+}
+
+.deeper{
+	font-size:32px;
+	text-align: center; 
+	color: #00245a; 
+	letter-spacing: 4px; 
+	font-family:medium-antenna; 
+	padding-top:50px; 
+	padding-bottom:50px
+}
+
+.web_head{
+	color: #B49B57; 
+	letter-spacing: 4px; 
+	font-family:medium-antenna;
+	font-size:25px; 
+	text-align:left;
+}
+
+.web_icon{
+	height:90px; 
+	width:90px;
+}
+
+.services-container {
+        position: relative;
+        display: inline-block;
+        display: -webkit-inline-block;
+        margin: 12px;
+    }
+
+.services-container,
+    .services-container > div > div {
+        width: 250px;
+        height: 210px;
+    }
+
+.webHeadPaddingTop{
+	padding-top: 30px;
+	flex: 90%;
+}
+
+.paragraphTextContent{
+	text-align:justify; color:#00244a; letter-spacing: 1px;
+	font-size: 17px;
+}
+.webIconDev{
+	flex: 10%; padding-bottom: 20px;
+}
+.backEndTech{
+	text-align:justify; color:#00244a; letter-spacing: 1px; font-size:20px;
+}
+@media (max-width:576px){
+	
+	
+	.services_header{
+	  background-image:url("../New_Background/Pinecone - Mobile Background 2020 - 3.jpg");
+	  background-repeat: no-repeat;
+  	  background-size: cover;
+	} 
+
+	
+	.service_geek{
+		
+	letter-spacing: 20px; 
+	font-family:medium-antenna; 
+	font-size:28px; 
+	color:#B49B57
+}
+	
+	.give_padding{
+		padding-left:35px;
+		padding-right:35px;
+	}
+	
+	.deeper{
+	font-size:18px;
+	text-align: center; 
+	color: #00245a; 
+	letter-spacing: 2px; 
+	font-family:medium-antenna; 
+	padding-top:50px; 
+	padding-bottom:50px
+}
+	
+
+	.web_head{
+	color: #B49B57; 
+	letter-spacing: 1px; 
+	font-family:medium-antenna;
+	font-size:12px; 
+	text-align:left;
+	padding-left: 2px;
+}
+	
+	.web_icon{
+	height:35px; 
+	width:35px;
+}
+.webIconDev{
+	flex: none; padding-bottom: 20px;
+}
+.webHeadPaddingTop{
+	padding-top: 12px;
+	flex: none;
+}
+.paragraphTextContent{
+	text-align:justify; color:#00244a; letter-spacing: 1px;
+	font-size: 12px;
+}
+.backEndTech{
+	text-align:justify; color:#00244a; letter-spacing: 1px; font-size:11px;
+	font-weight: bold;
+}
+
+}
+
+section {
+        -webkit-perspective: 800px;
+        perspective: 800px;
+        -webkit-perspective-origin: 50% 50%;
+        perspective-origin: 50% 50%;
+    }
+    
+    .flip-container {
+        position: relative;
+        display: inline-block;
+        display: -webkit-inline-block;
+        margin: 5px;
+    }
+    
+    .flip-container > div > div {
+        /* background: red; */
+        backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .flip-container .flipper {
+        transform-origin: 125px 100%;
+        -webkit-transform-origin: 125px 100%;
+        transition: 0.6s;
+        -webkit-transition:0.6s;
+        transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        position: relative;
+    }
+    .vertical.flip-container .flipper {
+        transform-origin: 100% 125px;
+        -webkit-transform-origin: 100% 125px;
+    }
+    
+    .flip-container > div > div + div {
+        /* background: green; */
+        transform: rotateX(180deg) scaleX(-1) scaleY(-1);
+        -webkit-transform: rotateX(180deg) scaleX(-1) scaleY(-1);
+
+    }
+    .vertical.flip-container > div > div + div {
+        transform: rotateX(180deg);
+        -webkit-transform: rotateX(180deg);
+    }
+    
+    
+    /* flip the pane when hovered */
+    .flip-container:hover .flipper,
+    .flip-container.hover .flipper {
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+    }
+    
+    .vertical.flip-container:hover .flipper,
+    .vertical.flip-container.hover .flipper{
+        transform: rotateX(180deg);
+        -webkit-transform: rotateX(180deg);
+
+    }
+    
+    .flip-container,
+    .flip-container > div > div {
+        width: 250px;
+        height: 250px;
+    }
+

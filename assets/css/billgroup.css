@@ -1,0 +1,82 @@
+/* CSS Document */
+
+.billGroupClientHeaderName{
+	letter-spacing: 25px; 
+	font-family:medium-antenna; 
+	font-size:60px; 
+	color:#B49B57
+}
+
+.divTextArea{
+	padding-top: 70px;padding-bottom: 40px; text-align:left; padding-left: 110px; padding-right: 80px;
+}
+.imageSizeSetFirst{
+	height:600px; width:950px;
+}
+.imageSizeSetSecond{
+	height:600px; width:950px;
+}
+.imageSizeSetThird{
+	height:600px; width:400px;
+}
+.imageSizeSetFour{
+	height:600px; width:400px;
+}
+.imageSizeSetFive{
+	height:500px; width:350px;
+}
+.imageSizeSetSix{
+	height:500px; width:850px;
+}
+.imageSizeSetSeven{
+	height:630px; width:850px;
+}
+@media (max-width:576px){
+.billGroupClientHeaderName{
+	letter-spacing: 20px; 
+	font-family:medium-antenna; 
+	font-size:35px; 
+	color:#B49B57
+}
+.divTextArea{
+	padding-top: 70px;padding-bottom: 40px; text-align:left; padding-left: 30px; padding-right: 80px;
+}	
+.imageSizeSetFirst{
+	height:300px; width:350px;
+}
+.imageSizeSetSecond{
+	height:300px; width:350px;
+}
+.imageSizeSetThird{
+	height:300px; width:170px;
+}
+.imageSizeSetFour{
+	height:400px; width:170px;
+}
+.imageSizeSetFive{
+	height:350px; width:140px;
+}
+.imageSizeSetSix{
+	height:360px; width:350px;
+}
+.imageSizeSetSeven{
+	height:430px; width:350px;
+}	
+}
+
+@media (max-width:768px) and (min-width: 576px){
+	.tech_geek{
+	letter-spacing: 15px; 
+	font-family:medium-antenna; 
+	font-size:45px; 
+	color:#B49B57
+}
+	
+	.tech_icons{
+	width:75px;height:65px;
+	padding-left:8px;
+	padding-right:8px;
+}
+}
+
+

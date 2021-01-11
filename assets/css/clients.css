@@ -1,0 +1,212 @@
+
+/*My hum... body.. yeah..
+body {
+  background-color: #B49B57;
+  background-size: cover;
+ 
+}
+ */
+
+@font-face {
+  font-family: normal-antenna;
+  /* font-weight: semi-bold; */
+  src: url(../font-family/ford-antenna-regular.otf) format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: medium-antenna;
+  /* font-weight: semi-bold; */
+  src: url(../font-family/ford-antenna-medium.otf) format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: semibold-antenna;  
+  src: url(../font-family/ford-antenna-semibold.otf) format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: semibold-italic-antenna;
+  src: url(../font-family/ford-antenna-semibold-italic.otf) format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: thin-italic-antenna;
+  src: url(../font-family/ford-antenna-thin-italic.otf) format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: bold-antenna;
+  src: url(../font-family/ford-antenna-bold.otf) format("truetype");
+  font-weight: normal;
+}
+
+
+
+.hover12 figure {
+  background: #00254a;
+  background-size: cover;
+}
+.hover12 figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+/* .hover12 figure:hover img {
+	opacity: .4;
+} */
+
+.middle {
+  /* transition: .5s ease; */
+  letter-spacing: 2px;
+  opacity: 0;
+  position: absolute;
+  top: 90%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  /* background: #00254a; */
+  width: 260px;
+  padding: 4px 0;
+  border-radius: 3px;
+}
+
+.middle_hindale {
+  /* transition: .5s ease; */
+  letter-spacing: 2px;
+  opacity: 0;
+  position: absolute;
+  top: 98%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  /* background: #00254a; */
+  width: 260px;
+  padding: 4px 0;
+  border-radius: 3px;
+}
+
+.company{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  /* background: #B49B57; */
+  /* width: 180px; */
+  padding: 4px 0;
+  border-radius: 3px;
+
+}
+
+.company h3 {
+  font-size:70px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hover12:hover .company {
+  /* vertical-align: bottom; */
+  opacity: 1;
+}
+
+.middle p {
+  font-size:20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.middle_hindale p {
+  font-size:20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hover12:hover .middle {
+  /* vertical-align: bottom; */
+  opacity: 1;
+}
+
+.hover12:hover .middle_hindale {
+  /* vertical-align: bottom; */
+  opacity: 1;
+}
+
+.clientHeaderName{
+	letter-spacing: 25px; 
+	font-family:medium-antenna; 
+	font-size:60px; 
+	color:#B49B57
+}
+
+.eggOHolicClient{
+	padding-top: 20px;
+	padding-bottom: 10px; 
+	text-align:center;
+	position: relative; 
+	height:500px; 
+	width:900px;
+}
+
+.clientDivContainer{
+	padding-top: 20px;
+	padding-bottom: 10px; 
+	text-align:center;
+	position: relative; 
+	height:450px; 
+	width:900px;
+}
+
+.clientImagesDisplay
+{
+	height:450px; width:900px;
+}
+
+@media (max-width:576px){
+.clientHeaderName{
+	letter-spacing: 20px; 
+	font-family:medium-antenna; 
+	font-size:35px; 
+	color:#B49B57
+}
+
+
+.clientDivContainer{
+	padding-top: 5px;
+	padding-bottom: 5px; 
+	text-align:center;
+	position: relative; 
+	height:200px; 
+	width:370px;
+}
+
+
+.clientImagesDisplay
+{
+	height:210px; width:350px;
+}
+	
+}
