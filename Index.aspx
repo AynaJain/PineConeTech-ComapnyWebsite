@@ -31,9 +31,11 @@
     <!-- <script src="js/modernizr.custom.js"></script> -->
   </head>
   <body>
+
+    
       <form id="form1" runat="server">
       <header class="main_header fade-in">
-         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="video_main">
+         <video width= "100%" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="video_main">
             <source src="Eggoholic/AdobeStock_289247564.mov" >
         </video>
           <div align="center" data-aos="zoom-out-up" >
@@ -50,15 +52,18 @@
       <!-- <div class="sticky-top bg-white "></div> -->
       <!-- <div class="container-fluid back p-5"> -->
       <!-- social media icons -->
-      <div class="icon-bar" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-          <a href="https://www.facebook.com/pineconetech" class="facebook"><i class="fa fa-facebook-square fa-1x"></i></a>
-          <a href="http://www.pineconetech.com/" class="google"><i class="fa fa-google fa-1x"></i></a>
-          <a href="https://www.linkedin.com/in/pinecone-tech-4479a71bb/" class="linkedin"><i class="fa fa-linkedin-square fa-1x"></i></a>      
-          <a href="https://www.instagram.com/pinecone_tech/" class="youtube"><i class="fa fa-instagram fa-1x"></i></a>
-      </div>
 
       <div class="conatiner mainService space col-sm-12 col-md-12">
-          <div style="width:auto; height:100px; background-color:#B49B57"></div>
+         
+        <div class="icon-bar" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <a href="https://www.facebook.com/pineconetech" class="facebook"><i class="fa fa-facebook-square fa-1x"></i></a>
+            <a href="http://www.pineconetech.com/" class="google"><i class="fa fa-google fa-1x"></i></a>
+            <a href="https://www.linkedin.com/in/pinecone-tech-4479a71bb/" class="linkedin"><i class="fa fa-linkedin-square fa-1x"></i></a>      
+            <a href="https://www.instagram.com/pinecone_tech/" class="youtube"><i class="fa fa-instagram fa-1x"></i></a>
+        </div>
+        
+        
+        <div style="width:auto; height:100px; background-color:#B49B57"></div>
           <div align="center" class="services_index" >
               OUR SERVICES
           </div>
@@ -455,7 +460,44 @@
               <br />
 
           </div>
-          <div class="col-sm-8 col-md-10 col-10" id="inner-div" style="background-color: white; width: 700px;height: 550px; ">
+
+          <div class="wrapper" style="background-color: white;">
+            <div class="inner_contact">
+              <form action="mailto:aashish@pineconetech.com" runat="server" method="post" enctype="multipart/form-data" id="submit_form">
+                <h4 class="get_head_get" style="color:#00245a;">GET IN CONTACT</h4>
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p> -->
+                <label class="form-group">
+                  <!-- <input type="text" placeholder="Enter Name" id="txtName" class="form-control"  required> -->
+                  <asp:TextBox ID="txtName" runat="server" class="form-control"  placeholder="Enter Name" ></asp:TextBox>
+                  <!-- <span class="border"></span> -->
+                </label>
+          
+                <label class="form-group">
+                  <!-- <input type="text" placeholder="Enter Email" id="txtEmail" class="form-control"  required> -->
+                  <asp:TextBox ID="txtEmail" runat="server" class="form-control"  placeholder="Enter Email" ></asp:TextBox>
+                </label>
+      
+                <label class="form-group">
+                  <!-- <input type="text" placeholder="Enter Phone Number" id="txtPhone" class="form-control"  required> -->
+                  <asp:TextBox ID="txtPhone" runat="server" class="form-control" placeholder="Enter phone Number" ></asp:TextBox>
+                </label>
+      
+                <label class="form-group" >
+                  <!-- <textarea name="" id="txtMessage" placeholder="Reach out to us..." style="height:200px;" required></textarea> -->
+                  <!-- <span for="">Reach out to us...</span> -->
+                  <asp:TextBox ID="txtMessage" Rows="3" TextMode="MultiLine" runat="server" style="height: 200px;" class="form-control" placeholder="REACH OUT TO US..." ></asp:TextBox>
+                </label>
+                
+                <!-- <button class="button_style" id="btnSend" onclick="return validateInput();">Submit 
+                  <i class="zmdi zmdi-arrow-right"></i>
+                </button> -->
+                <asp:Button ID="btnSendEmail" runat="server" OnClientClick="return validateInput();"   Text="SEND" class="button_style" OnClick="btnSendEmail_Click" />
+                <i class="zmdi zmdi-arrow-right"></i>
+             
+              </form>
+            </div>
+          </div>
+          <!-- <div class="col-sm-8 col-md-10 col-10" id="inner-div" style="background-color: white; width: 700px;height: 550px; ">
               <div class="get_contact" align="center">
                   GET IN CONTACT
               </div>
@@ -463,17 +505,20 @@
                   <br />
 
               </div>
-              <section class="contact-wrap">
+               -->
+              
+              <!-- <section class="contact-wrap  ">
                       <div class="col-sm-10 col-lg-12 col-md-11 col-11 offset-1" style="margin:1px">
                           <div class="input-block">
                               <%--<input type="text" class="form-control" id="txtName" align="center" style="background-color: darkgray; border-radius: 0px;font-family: medium-antenna" placeholder="NAME">--%>
-<%--                               
+<%--
+                               
               $('#txtName').css({ "border": 'none' });
               $('#txtEmail').css({ "border": 'none' });
               $('#txtPhone').css({ "border": 'none' });--%>
  
-                              <asp:TextBox ID="txtName" runat="server" class="form-control" align="center" style="background-color: darkgray; border-radius: 0px;font-family: medium-antenna" placeholder="NAME" ></asp:TextBox>
-                          </div>
+                              <asp:TextBox ID="txtName" runat="server" class="form-control" align="center" style="background-color: darkgray; border-radius: 0px;font-family: medium-antenna" placeholder="NAME" ></asp:TextBox> -->
+                          <!-- </div>
                       </div>
                       <br />
                       <div class="col-sm-10 col-lg-12 col-md-11 col-11" style="margin:1px">
@@ -484,6 +529,7 @@
                           </div>
                       </div>
                       <br />
+
                       <div class="col-sm-10 col-lg-12 col-md-11 col-11 offset-1" style="margin:1px">
                           <div class="input-block">
                               <%--<input type="text" class="form-control" id="txtPhone" style="background-color: darkgray; border-radius: 0px;font-family: medium-antenna" placeholder="PHONE">--%>
@@ -494,8 +540,8 @@
                       <br />
                       <div class="col-sm-10 col-lg-12 col-md-11 col-11" style="margin:1px">
                           <div class="input-block textarea">
-                              <!--<label for="">Drop your message here</label>-->
-                              <%--<textarea rows="3" type="text" class="form-control" id="txtMessage" style="background-color: darkgray; border-radius: 0px;font-family: medium-antenna" placeholder="REACH OUT TO US..."></textarea>--%>
+                              <label for="">Drop your message here</label>-->
+                              <!-- <%--<textarea rows="3" type="text" class="form-control" id="txtMessage" style="background-color: darkgray; border-radius: 0px;font-family: medium-antenna" placeholder="REACH OUT TO US..."></textarea>--%>
 
                               <asp:TextBox ID="txtMessage" Rows="3" TextMode="MultiLine" runat="server" class="form-control" align="center" style="background-color: darkgray; border-radius: 0px;font-family: medium-antenna" placeholder="REACH OUT TO US..." ></asp:TextBox>
                               
@@ -510,9 +556,10 @@
                           <asp:Button ID="btnSendEmail" runat="server" OnClientClick="return validateInput();"  Text="SEND" class="square-button contact_send" OnClick="btnSendEmail_Click" />
                       </div>
               </section>
+
           </div>
       </div>
-    
+     --> 
 
       <div style="width:auto; height:15px; background-color:#B49B57"></div>
 

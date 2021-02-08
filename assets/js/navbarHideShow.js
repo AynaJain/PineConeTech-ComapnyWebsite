@@ -1,3 +1,4 @@
+
 $(window).resize(function () {
   var windowWidth = $(window).width();
   if (windowWidth < 500) {
@@ -5,7 +6,7 @@ $(window).resize(function () {
     $('.dropdown-content').hide();
 
   } else {
-    $('.dropdown-content').show();
+     $('.dropdown-content').hide();
   }
 });
 
@@ -20,6 +21,6 @@ function hideShowSubMenu() {
     }
 
   } else {
-    $('.dropdown-content').show();
+    $('.dropdown-content').hide();
   }
 }

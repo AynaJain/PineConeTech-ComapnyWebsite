@@ -26,10 +26,18 @@
 	height:500px; width:350px;
 }
 .imageSizeSetSix{
-	height:500px; width:850px;
+	height:364px; width:850px;
 }
 .imageSizeSetSeven{
 	height:630px; width:850px;
+}
+
+.imageSizeSetEight{
+	height:562px; width:850px;
+}
+
+.imageSizeSetNine{
+	height:624px; width:500px;
 }
 @media (max-width:576px){
 .billGroupClientHeaderName{

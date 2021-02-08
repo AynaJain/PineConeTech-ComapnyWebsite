@@ -12,10 +12,10 @@
 }
 .jamesImageFirst{
 	
-	height:550px; width:850px;
+	height:509px; width:1000px;
 }
 .jamesImageSecond{
-	height:620px; width:390px;
+	height:464px; width:390px;
 }
 
 .jamesImageThird{
@@ -23,6 +23,11 @@
 }
 .jamesImageFour{
 	height:400px; width:500px;
+}
+
+.jamesImageLast
+{
+	height:620px ;width:520px ;
 }
 .postHeaderName{
 	font-family: medium-antenna; letter-spacing: 2px;color:#B49B57;

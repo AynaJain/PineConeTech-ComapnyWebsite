@@ -88,6 +88,11 @@
     background-size: cover;
 } 
 
+.nissan_header {
+    background-image: url(../images/James & Sons - Cover.jpg);
+    height: 100vh;
+    background-size: cover;
+} 
 /* .header-back{
   background-image:url(../images/mainBack.jpg);
   height:100vh;

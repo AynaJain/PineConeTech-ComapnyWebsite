@@ -11,15 +11,21 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
+
+<style>
+    .mySlides {display:none;}
+</style>
+
   <body>
       <header class="about_header">
           <!-- <h1 class="heading"> PINECONETECH</h1> -->
@@ -45,12 +51,13 @@
 		  
 	  </div>
 
-      <div class="icon-bar" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-        <a href="https://www.facebook.com/pineconetech" class="facebook"><i class="fa fa-facebook-square fa-1x"></i></a>
-        <a href="http://www.pineconetech.com/" class="google"><i class="fa fa-google fa-1x"></i></a>
-        <a href="https://www.linkedin.com/in/pinecone-tech-4479a71bb/" class="linkedin"><i class="fa fa-linkedin-square fa-1x"></i></a>      
-        <a href="https://www.instagram.com/pinecone_tech/" class="youtube"><i class="fa fa-instagram fa-1x"></i></a>
-      </div>
+	  <div class="icon-bar" data-aos-easing="linear" data-aos-duration="1500">
+		<a href="https://www.instagram.com/pinecone_tech/" target="_blank" class="youtube"><i class="fa fa-instagram fa-1x"></i></a>
+		<a href="https://www.facebook.com/pineconetech" target="_blank" class="facebook"><i class="fa fa-facebook-square fa-1x"></i></a>
+		<a href="http://www.pineconetech.com/" class="google" target="_blank"><i class="fa fa-google fa-1x"></i></a>
+		<a href="https://www.linkedin.com/company/71024140/admin/" target="_blank" class="linkedin"><i class="fa fa-linkedin-square fa-1x"></i></a>      
+	 </div>
+
       <div id="navbar1234">
       </div>
 	  
@@ -65,7 +72,7 @@
 	  <center>
 	  <div>	  
 		  <div class="container">
-			  <div class="eggo_web" style="font-family: medium-antenna">WEBSITE</div>
+			  <div class="eggo_web" style="font-family: medium-antenna;color: #00254a;">WEBSITE</div>
 			  <img src="Eggoholic/EggHolics - Website Example 2020.png" class="website_image">
 
 		  </div>
@@ -74,8 +81,8 @@
 	  
 	  <br>
 	  <div>
-		  <div class="container">
-			  <div class="eggo_web" style="font-family: medium-antenna">MENU/ PRINT</div>
+		  <div class="container" style="margin-left: 150px;">
+			  <div class="eggo_web" style="font-family: medium-antenna;color: #00254a;">MENU/ PRINT</div>
 			  <img src="Eggoholic/Pinecone - Work - Egg Holic - Example 3.png" width="1210px" class="eggo_double">
 		  </div>
 	  </div>
@@ -84,10 +91,10 @@
 	  
 	 <center> 
 	<div>
-		<div class="eggo_web" style="font-family: medium-antenna">MENU/ DIGITAL</div>
-	<div class="center_content">
-	  <button id="myBtn">VIEW MENU</button>
+		<div class="eggo_web" style="font-family: medium-antenna;color: #00254a;">MENU/ DIGITAL</div>
 
+	<div class="center_content">
+	  <button id="myBtn" style="border:2px solid white;border-radius: 5px;">Click to View Menu</button>
 		<!-- The Modal -->
 		<div id="myModal" class="modal" style="text-align:center;">
 			
@@ -98,10 +105,10 @@
 				<span class="close">&times;</span>
 <!--				<p>Some text in the Modal..</p>-->
 <!--				  <div class="w3-content w3-display-container" style="text-align:center; padding-left:100px">-->
-					  <img class="mySlides" src="Eggoholic/Egg-O-Holic - In-Store Menu - Chicago 5.jpg" style="width:600; height:600px">
-					  <img class="mySlides" src="Eggoholic/Egg-O-Holic - In-Store Menu - Chicago 6.jpg" style="width:600; height:600px">
-					  <img class="mySlides" src="Eggoholic/Egg-O-Holic - In-Store Menu - Chicago 7.jpg" style="width:600; height:600px">
-					  <img class="mySlides" src="Eggoholic/Egg-O-Holic - In-Store Menu - Chicago 4.jpg" style="width:600; height:600px">
+					  <img class="mySlides" src="Eggoholic/Egg-O-Holic-Chicago5.jpg" style="width:600; height:600px">
+					  <img class="mySlides" src="Eggoholic/Egg-O-Holic-Chicago6.jpg" style="width:600; height:600px">
+					  <img class="mySlides" src="Eggoholic/Egg-O-Holic-Chicago7.jpg" style="width:600; height:600px">
+					  <img class="mySlides" src="Eggoholic/Egg-O-Holic-Chicago4.jpg" style="width:600; height:600px">
 
 					  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
 					  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
@@ -109,64 +116,49 @@
 			  </div>
 <!--		  </div>-->
 
-		</div>
-	  </div>
+			</div>
+		 </div>
 	  </div>
 	  </center>
-	  
-	  
-	  <br>
-	  <div class="eggo_web" style="font-family: medium-antenna">PHOTOGRAPHY</div>
-	  <br>
-	  <div class="continue-container">
+		
+	  <br/>
+      <br/>
+      <br/>
 
-		<div class="newSlides fade">
-		  <div class="new-numbertext">1 / 6</div>
-		  <img id="new_img" src="Eggoholic/Photos - Display/Photos - Display - 1.jpg" style="width:100%">
-<!--		  <div class="new-text">Caption Text</div>-->
-		</div>
-
-		<div class="newSlides fade">
-		  <div class="new-numbertext">2 / 6</div>
-		  <img id="new_img" src="Eggoholic/Photos - Display/Photos - Display - 2.jpg" style="width:100%">
-<!--		  <div class="new-text">Caption Two</div>-->
-		</div>
-
-		<div class="newSlides fade">
-		  <div class="new-numbertext">3 / 6</div>
-		  <img id="new_img" src="Eggoholic/Photos - Display/Photos - Display - 3.jpg" style="width:100%">
-<!--		  <div class="new-text">Caption Three</div>-->
-		</div>
-		  
-		 <div class="newSlides fade">
-		  <div class="new-numbertext">4 / 6</div>
-		  <img id="new_img" src="Eggoholic/Photos - Display/Photos - Display - 4.jpg" style="width:100%">
-<!--		  <div class="new-text">Caption Three</div>-->
-		</div>
-		  
-		  <div class="newSlides fade">
-		  <div class="new-numbertext">5 / 6</div>
-		  <img id="new_img" src="Eggoholic/Photos - Display/Photos - Display - 5.jpg" style="width:100%">
-<!--		  <div class="new-text">Caption Three</div>-->
-		</div>
-		  
-		  <div class="newSlides fade">
-		  <div class="new-numbertext">6 / 6</div>
-		  <img id="new_img" src="Eggoholic/Photos - Display/Photos - Display - 6.jpg" style="width:100%">
-<!--		  <div class="new-text">Caption Three</div>-->
-		</div>
-
-		</div>
-		<br>
-
-		<div style="text-align:center">
-		  <span class="new-dot"></span> 
-		  <span class="new-dot"></span> 
-		  <span class="new-dot"></span> 
-		  <span class="new-dot"></span>
-		  <span class="new-dot"></span>
-		  <span class="new-dot"></span>
-		</div>
+    <div style="height: 100vh;">
+        <div class="w3-content w3-display-container">
+            <img class="mySlidesNew" src="Eggoholic/Photos - Display/Photos - Display - 1.jpg" style="width:100%">
+            <img class="mySlidesNew" src="Eggoholic/Photos - Display/Photos - Display - 2.jpg" style="width:100%">
+            <img class="mySlidesNew" src="Eggoholic/Photos - Display/Photos - Display - 3.jpg" style="width:100%">
+            <img class="mySlidesNew" src="Eggoholic/Photos - Display/Photos - Display - 4.jpg" style="width:100%">
+            <img class="mySlidesNew" src="Eggoholic/Photos - Display/Photos - Display - 5.jpg" style="width:100%">
+            <img class="mySlidesNew" src="Eggoholic/Photos - Display/Photos - Display - 6.jpg" style="width:100%">
+          
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivsNew(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivsNew(1)">&#10095;</button>
+          </div>
+          
+          <script>
+          var slideIndexNew = 1;
+          showDivsNew(slideIndexNew);
+          
+          function plusDivsNew(n) {
+            showDivsNew(slideIndexNew += n);
+          }
+          
+          function showDivsNew(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlidesNew");
+            if (n > x.length) {slideIndexNew = 1}
+            if (n < 1) {slideIndexNew = x.length}
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            x[slideIndexNew-1].style.display = "block";  
+          }
+          </script>
+          
+    </div>
 	  
 	  <br>
 	  <br>
@@ -282,7 +274,36 @@
 
       </footer>
 
+	  <style type="text/css">
 
+		#myBtn:hover
+		{
+			background-color: #00245a;
+			opacity: 100%;
+			color: white;
+		}
+
+        .overlay {
+          position: absolute;
+          bottom: 0;
+          left: 100%;
+          top: 20px;
+          margin-left: 20px;
+          right: 0;
+          background-color: #00245a;
+          overflow: hidden;
+          width: 0;
+          height: 100%;
+          transition: .5s ease;
+        
+        }
+        
+        .container:hover .overlay {
+          width: 50%;
+          left:50%;
+        }
+        
+        </style>
       <script>
           $(function () {
               $("#navbar1234").load("navbar.html");
